@@ -1,55 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">    	    
-    <title>KnockoutJS</title>
-</head>
-<body>		
+   <head>
+      <title>KnockoutJS Simple Example</title>
+   </head>
 
-    <div class="container">
+   <body>
+      <!-- This is called "view" of HTML markup that defines the appearance of UI -->
 
-        <div>
-            <div >
-                <label>nombre</label>
-                <span class="form-control" data-bind="text: nombre"></span>
-            </div>
-        </div>
+      <p>Nombre: <input type="text" data-bind = "textInput: nombre"></p>
+      <p>Banda Favorita: <input type="text" data-bind = "textInput: bandaFavorita"></p>
 
-        <div>
-            <div >
-                <input type="text" class="form-control" data-bind="value: nombre"></span>
-            </div>
-        </div>
+      <br>
 
-        <!-- <div class="row">
-            <div class="col-md-6 form-control">
-                <label>Banda favorita</label>
-                <span class="form-control" data-bind="text: bandaFavorita"></span>
-            </div>
-            <div class="col-md-6 form-control">
-                <label>Banda favorita</label>
-                <input type="text" class="form-control" data-bind="value: bandaFavorita"></span>
-            </div>
-        </div>
+      <p>Tag text to Nombre: <span data-bind = "text: nombre"></span></p>
+      <p>Tag text to Banda Favorita: <span data-bind = "text: bandaFavorita"></span></p>
+      <p>Tag html to Nombre: <strong><span data-bind = "html: nombre"></span></strong></p>
+      <p>Tag html to Banda Favorita: <strong><span data-bind = "html: bandaFavorita"></span></strong></p>
 
-        <div class="row">
-            <div class="col-md-6 alert alert-info" data-bind="html: nombre">
-            </div>
-        </div>
+      <script type="text/javascript" src="../../../0-References/knockout.min.js"></script>
+      <script type="text/javascript" src="js/app.js"></script>
 
-        <div class="row">
-            <div class="col-md-6 alert alert-success" data-bind="html: bandaFavorita">
-            </div>
-        </div> -->
-
-    </div>
-
-    <script type="text/javascript" src="js/knockout.min.js"></script>		
-	<script type="text/javascript" src="js/jquery.slim.min.js"></script>
-	<script type="text/javascript" src="js/popper.min.js"></script>	
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
-    <script type="text/javascript" src="js/app.js"></script>
-</body>
+   </body>
 </html>

@@ -1,9 +1,8 @@
-console.log('Hola Mundo!')
-
 var viewModel = {
-    nombre: 'Jimmy Javier',
-    bandaFavorita: 'Slipknot'
+    nombre: ko.observable('David Atehortua'),
+    bandaFavorita: ko.observable('Slipknot')
 };
 
-ko.applyBindings(viewModel); //Activa knokout para hacer el ligado entre el viewmodel y la interfaz
+//Activa knokout para hacer el ligado entre el viewmodel y la interfaz
+ko.applyBindings(viewModel); 
 
