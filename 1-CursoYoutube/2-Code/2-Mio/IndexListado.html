@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+   <head>
+      <title>KnockoutJS Simple Example</title>
+   </head>
+
+   <body>
+      <table>
+         <thead>
+            <tr>
+               <th>Identificador</th>
+               <th>Nombre</th>
+               <th>Banda</th>
+            </tr>
+         </thead>
+         <tbody data-bind="foreach:registros">
+            <tr>
+               <td data-bind="text:id"></td>
+               <td data-bind="text:nombre"></td>
+               <td data-bind="text:banda"></td>
+            </tr>
+         </tbody>
+      </table>
+
+      <script type="text/javascript" src="../../../0-References/knockout.min.js"></script>
+      <script type="text/javascript" src="js/appListado.js"></script>
+      <script type="text/javascript" src="js/appListadoDatos.js"></script>
+      <script type="text/javascript" src="js/viewModel.js"></script>
+
+   </body>
+</html>
